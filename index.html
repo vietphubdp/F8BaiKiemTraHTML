@@ -115,15 +115,19 @@
 
         <p>
             Một cách toán học, Supervised learning là khi chúng ra có một tập hợp biến đầu vào X = {
-            x 1 , x 2 , … , x N } và một tập hợp nhãn tương ứng Y = { y 1 , y 2 , … , y N } , trong
-            đó x i , y i là các vector. Các cặp dữ liệu biết trước ( x i , y i ) ∈ X × Y được gọi là
-            tập training data (dữ liệu huấn luyện). Từ tập training data này, chúng ta cần tạo ra
-            một hàm số ánh xạ mỗi phần tử từ tập X sang một phần tử (xấp xỉ) tương ứng của tập Y :
+            x<sub>1</sub> , x<sub>2</sub> , … , x<sub>N</sub> } và một tập hợp nhãn tương ứng Y = {
+            y<sub>1</sub> , y<sub>2</sub> , … , y<sub>N</sub> } , trong đó x<sub>i</sub> , y<sub
+                >i</sub
+            >
+            là các vector. Các cặp dữ liệu biết trước ( x<sub>i</sub> , y<sub>i</sub> ) ∈ X x Y được
+            gọi là tập training data (dữ liệu huấn luyện). Từ tập training data này, chúng ta cần
+            tạo ra một hàm số ánh xạ mỗi phần tử từ tập X sang một phần tử (xấp xỉ) tương ứng của
+            tập Y :
         </p>
 
         <p>
             Mục đích là xấp xỉ hàm số f thật tốt để khi có một dữ liệu x mới, chúng ta có thể tính
-            được nhãn tương ứng của nó y = f ( x ) .
+            được nhãn tương ứng của nó y = f (x).
         </p>
 
         <p>
@@ -181,11 +185,12 @@
             nghĩa là gì)
         </p>
         <p>
-            Gần đây Microsoft có một ứng dụng dự đoán giới tính và tuổi dựa trên khuôn mặt. Phần dự
-            đoán giới tính có thể coi là thuật toán Classification, phần dự đoán tuổi có thể coi là
-            thuật toán Regression. Chú ý rằng phần dự đoán tuổi cũng có thể coi là Classification
-            nếu ta coi tuổi là một số nguyên dương không lớn hơn 150, chúng ta sẽ có 150 class (lớp)
-            khác nhau.
+            Gần đây
+            <a href="">Microsoft có một ứng dụng dự đoán giới tính và tuổi dựa trên khuôn mặt.</a>
+            Phần dự đoán giới tính có thể coi là thuật toán Classification, phần dự đoán tuổi có thể
+            coi là thuật toán <strong>Regression</strong>. Chú ý rằng phần dự đoán tuổi cũng có thể
+            coi là <b>Classification</b> nếu ta coi tuổi là một số nguyên dương không lớn hơn 150,
+            chúng ta sẽ có 150 class (lớp) khác nhau.
         </p>
 
         <h3 id="unsupervised-learning-hoc-khong-giam-sat">
@@ -267,17 +272,17 @@
                 >AlphaGo gần đây nổi tiếng với việc chơi cờ vây thắng cả con người. Cờ vây được xem
                 là có độ phức tạp cực kỳ cao</a
             >
-            với tổng số nước đi là xấp xỉ 10 761 , so với cờ vua là 10 120 và tổng số nguyên tử
-            trong toàn vũ trụ là khoảng 10 80 !! Vì vậy, thuật toán phải chọn ra 1 nước đi tối ưu
-            trong số hàng nhiều tỉ tỉ lựa chọn, và tất nhiên, không thể áp dụng thuật toán tương tự
-            như <a href="">IBM Deep Blue</a> (IBM Deep Blue đã thắng con người trong môn cờ vua 20
-            năm trước). Về cơ bản, AlphaGo bao gồm các thuật toán thuộc cả Supervised learning và
-            Reinforcement learning. Trong phần Supervised learning, dữ liệu từ các ván cờ do con
-            người chơi với nhau được đưa vào để huấn luyện. Tuy nhiên, mục đích cuối cùng của
-            AlphaGo không phải là chơi như con người mà phải thậm chí thắng cả con người. Vì vậy,
-            sau khi học xong các ván cờ của con người, AlphaGo tự chơi với chính nó với hàng triệu
-            ván chơi để tìm ra các nước đi mới tối ưu hơn. Thuật toán trong phần tự chơi này được
-            xếp vào loại Reinforcement learning. (Xem thêm tại
+            với tổng số nước đi là xấp xỉ 10<sup>80</sup> , so với cờ vua là 10<sup>120</sup> và
+            tổng số nguyên tử trong toàn vũ trụ là khoảng 10<sup>80</sup> !! Vì vậy, thuật toán phải
+            chọn ra 1 nước đi tối ưu trong số hàng nhiều tỉ tỉ lựa chọn, và tất nhiên, không thể áp
+            dụng thuật toán tương tự như <a href="">IBM Deep Blue</a> (IBM Deep Blue đã thắng con
+            người trong môn cờ vua 20 năm trước). Về cơ bản, AlphaGo bao gồm các thuật toán thuộc cả
+            Supervised learning và Reinforcement learning. Trong phần Supervised learning, dữ liệu
+            từ các ván cờ do con người chơi với nhau được đưa vào để huấn luyện. Tuy nhiên, mục đích
+            cuối cùng của AlphaGo không phải là chơi như con người mà phải thậm chí thắng cả con
+            người. Vì vậy, sau khi học xong các ván cờ của con người, AlphaGo tự chơi với chính nó
+            với hàng triệu ván chơi để tìm ra các nước đi mới tối ưu hơn. Thuật toán trong phần tự
+            chơi này được xếp vào loại Reinforcement learning. (Xem thêm tại
             <a href="">Google DeepMind’s AlphaGo: How it works</a>).
         </p>
 
